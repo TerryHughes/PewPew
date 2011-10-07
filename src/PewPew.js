@@ -17,7 +17,7 @@ function loadSound(file) {
 chrome.tabs.onRemoved.addListener(function(tabId, removeObject) {
     var random = Math.random() * 100;
 
-   if (random > 75)
+   if (random < 75)
         return;
 
     sounds[parseInt(random / 33)].play();
