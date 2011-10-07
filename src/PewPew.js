@@ -15,12 +15,10 @@ function loadSound(file) {
 }
 
 chrome.tabs.onRemoved.addListener(function(tabId, removeObject) {
-    var random = Math.random() * 100;
+    var random = (Math.random() * 100 - 75) * 4;
 
-   if (random < 75)
-        return;
-
-    sounds[parseInt(random / 33)].play();
+    if (random >= 0)
+        sounds[parseInt(random / 33)].play();
 });
 
 loadSounds();

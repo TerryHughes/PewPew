@@ -1,6 +1,6 @@
 {
     "name": "Pew Pew",
-    "version": "1.1",
+    "version": "1.2",
     "description": "Sometimes, when I hit ctrl-w in Chrome, I make a 'pew' laser sound. (http://twitter.com/#!/jamesthigpen/status/116216027204960257)",
     "background_page": "PewPew.html",
     "icons": {
