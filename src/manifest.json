@@ -1,13 +1,10 @@
 {
-    "manifest_version": 2,
+    "manifest_version": 3,
     "name": "Pew Pew",
-    "version": "1.5",
+    "version": "1.6",
     "description": "Sometimes, when I hit ctrl-w in Chrome, I make a 'pew' laser sound. (http://twitter.com/#!/jamesthigpen/status/116216027204960257)",
     "background": {
-        "scripts": [
-            "PewPew.js"
-        ],
-        "persistent": false
+        "service_worker": "PewPew.js"
     },
     "icons": {
         "16": "icons/icon16.png",
